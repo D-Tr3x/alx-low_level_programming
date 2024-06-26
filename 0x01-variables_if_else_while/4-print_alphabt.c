@@ -5,12 +5,13 @@
  *
  * lower - stores the alphabets for output
  *
- * return: ALways 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 char lower = 'a';
+
 while (lower <= 'z')
 {
 if (lower != 'e' && lower != 'q')
@@ -18,5 +19,6 @@ putchar(lower);
 lower++;
 }
 putchar('\n');
-return(0);
+
+return (0);
 }
