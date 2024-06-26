@@ -3,8 +3,6 @@
 /**
  * main - Entry point
  *
- * putchar - outputs the hexadecimal 
- *
  * Return: Always 0 (Success)
  */
 
