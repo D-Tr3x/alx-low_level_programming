@@ -7,16 +7,21 @@
 
 void times_table(void)
 {
-  int row, col;
-  for (row = 0; row <= 9; row++)
-    {
-      for (col = 0; col <=9; col++)
-	{
-	  _putchar((col * row) + '0');
-	}
-      if (row < 9 && col < 9)
-	_putchar(',');
-      _putchar(' ');
-    }
-  _putchar('\n');
+int digt, times, result;
+for (digt = 0; digt <= 9; digt++)
+{
+_putchar('0');
+for (times = 1; times <= 9; times++)
+{
+_putchar(',');
+_putchar(' ');
+result = digt * times;
+if (result <= 9)
+_putchar(' ');
+else
+_putchar((result / 10) + '0');
+_putchar((result % 10) + '0');
+}
+_putchar('\n');
+}
 }
