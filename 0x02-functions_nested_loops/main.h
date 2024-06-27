@@ -2,8 +2,9 @@
 #define MAIN_H
 
 int _abs(int n);
-int _islower(int c);
 int _isalpha(int c);
+int _islower(int c);
+int print_last_digit(int n);
 int print_sign(int n);
 int _putchar(char c);
 void print_alphabet(void);
