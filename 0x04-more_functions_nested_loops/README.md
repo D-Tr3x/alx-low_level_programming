@@ -4,3 +4,4 @@
 3. The numbers speak fot themselves
 4. I beleive in numbers and signs
 5. Numbers constitute the only universal language
+6. The shortest distance between two points is a straight line
