@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers 1 to 100, followed by a new line,
- * .......but for multiples or 3, print 'Fizz'
- * .......for multiples of 5, print 'Buzz'
- * .......for multiples of 3 & 5, print 'FizzBuzz'
- * Return: 0 on Success.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -13,14 +11,18 @@ int main(void)
 int num;
 for (num = 1; num <= 100; num++)
 {
-if ((num % 3 == 0 && num % 5 == 0))
-printf("FizzBuzz ");
+if (num % 3 == 0 && num % 5 == 0)
+printf("FizzBuzz");
 else if ((num % 3) == 0)
-printf("Fizz ");
+printf("Fizz");
 else if ((num % 5) == 0)
-printf("Buzz ");
+printf("Buzz");
 else
-printf("%d ", num);
+{
+printf("%d", num);
+}
+if (num < 100)
+printf(" ");
 }
 
 printf("\n");
