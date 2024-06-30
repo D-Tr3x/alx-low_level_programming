@@ -10,10 +10,9 @@ int main(void)
 {
 char *str = "_putchar\n";
 
-while (*str)
+for (; *str; str++)
 {
 _putchar(*str);
-str++;
 }
 
 return (0);
