@@ -6,9 +6,8 @@
  * @buffer: the address of memory to print
  * @size: the size of the memory to print
  *
- * Return: Nothing.
+ * Return: Nothing
  */
-
 void simple_print_buffer(char *buffer, unsigned int size)
 {
   unsigned int i;
@@ -25,7 +24,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 	  printf("\n");
 	}
       printf("0x%02x", buffer[i]);
-      i++
+      i++;
     }
   printf("\n");
 }
@@ -37,10 +36,11 @@ void simple_print_buffer(char *buffer, unsigned int size)
  */
 int main(void)
 {
-  char buffer[98] = {0x00};
+  char buffer[98] = {0};
+  char buffer2[98] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
   simple_print_buffer(buffer, 98);
-  _memset(buffer, 0x01, 95);
+  _memcpy(buffer + 50, buffer2, 10);
   printf("-------------------------------------------------\n");
   simple_print_buffer(buffer, 98);
   return (0);
