@@ -13,26 +13,29 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int i = 0;
 int check;
+char *ptr;
 
 while (*s != '\0')
 {
 check = 0;
-while (*accept != '\0')
+ptr = accept;
+
+while (*ptr != '\0')
 {
-if (*s == *accept)
+if (*s == *ptr)
 {
 i++;
 check = 1;
 break;
 }
-accept++;
+ptr++;
 }
 if (check == 0)
 {
 break;
 }
 s++;
-accept -= check;
 }
+
 return (i);
 }
