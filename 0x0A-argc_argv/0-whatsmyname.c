@@ -2,6 +2,8 @@
 
 /**
  * main - prints its name followed by a new line
+ * @argc: the number count of arguments used in main
+ * @argv: a pointer to array of the arguments used
  *
  * Return: Always 0.
  */
