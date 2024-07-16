@@ -24,7 +24,7 @@ while (str[i] != '\0')
 i++;
 
 size = i + 1;
-duplicate = malloc((size) * sizeof(char));
+duplicate = malloc((size) *sizeof(char));
 
 if (duplicate == NULL)
 return (NULL);
