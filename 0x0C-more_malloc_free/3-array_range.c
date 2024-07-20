@@ -20,7 +20,7 @@ length = max - min + 1;
 if (min > max)
 return (NULL);
 
-array = malloc(length *sizeof(array));
+array = malloc(length *sizeof(int));
 if (array == NULL)
 return (NULL);
 
