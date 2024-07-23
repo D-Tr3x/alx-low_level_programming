@@ -1,0 +1,17 @@
+#ifndef DOG_H
+#define DOG_H
+
+/**
+ * struct dog - A new type describing a dog
+ * @name: the name of the dog (pointer to char string)
+ * @age: the age of the dog (float)
+ * @owner: the owner of the dog (pointer to char string)
+ */
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
+#endif /* DOG_H */
