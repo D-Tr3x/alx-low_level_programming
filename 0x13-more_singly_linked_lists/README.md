@@ -4,3 +4,4 @@
 3. Add node at the end
 4. Free list
 5. Free
+6. Pop
