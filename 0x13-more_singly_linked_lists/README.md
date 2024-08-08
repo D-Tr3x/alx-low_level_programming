@@ -6,3 +6,4 @@
 5. Free
 6. Pop
 7. Get node at index
+8. Sum list
