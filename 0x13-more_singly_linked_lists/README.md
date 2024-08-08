@@ -7,3 +7,4 @@
 6. Pop
 7. Get node at index
 8. Sum list
+9. Insert
