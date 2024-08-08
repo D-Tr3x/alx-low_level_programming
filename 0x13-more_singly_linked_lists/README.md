@@ -8,3 +8,4 @@
 7. Get node at index
 8. Sum list
 9. Insert
+10. Delete at index
