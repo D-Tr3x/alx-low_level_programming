@@ -4,3 +4,4 @@
 3. Set bit
 4. Clear bit
 5. Flip bits
+6. Endianness
