@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
-		_perror("Error: Can't read fro file", argv[1], 98);
+		_perror("Error: Can't read from file", argv[1], 98);
 
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (file_to == -1)
