@@ -1,4 +1,4 @@
-#include "HASH_TABLES_H"
+#include "hash_tables.h"
 
 /**
  * hash_table_create - creates a hash table
@@ -8,13 +8,23 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *table = (hash_table_t *)malloc(sizeof(hash_table_t))
-    table->size = size
-    table->count = 0
-    table->itens = (ht_item**)calloc(table->size, sizeof(ht_item*))
+  hash_table_t *table;
+  unsigned long int i;
 
-    for (int i = 0; i < table->size; i++)
-        table->items[i] = NULL
+  table = malloc(sizeof(hash_table_t));
+  if (!table)
+    return (NULL);
 
-    return table
+  table->size = size;
+  table->array = malloc(size * sizeof(hash_node_t *));
+  if (!table->array)
+  {
+    free(table);
+    return (NULL);
+  }
+
+  for (i = 0; i < table->size; i++)
+    table->array[i] = NULL;
+
+  return (table);
 }

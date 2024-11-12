@@ -1,8 +1,9 @@
-#define HASH_TABLES_H
-#ifndef HASH_TABLES_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -36,4 +37,4 @@ typedef struct hash_table_s
 
 hash_table_t *hash_table_create(unsigned long int size);
 
-#endif /* HASH_TABLES_H */
+#endif /* MAIN_H */
