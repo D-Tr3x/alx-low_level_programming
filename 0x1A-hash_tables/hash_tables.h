@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -36,5 +37,6 @@ hash_node_t **array;
 
 
 hash_table_t *hash_table_create(unsigned long int size);
+unsigned long int hash_djb2(const unsigned char *str);
 
 #endif /* MAIN_H */
