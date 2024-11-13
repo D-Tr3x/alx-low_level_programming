@@ -14,7 +14,7 @@ char *dup_value;
 unsigned long int index;
 hash_node_t *node, *new_node;
 
-if (!ht || !*key || key[0] == '\0' || !value)
+if (!ht || !key || !*key || !value)
 return (0);
 
 dup_value = strdup(value);
