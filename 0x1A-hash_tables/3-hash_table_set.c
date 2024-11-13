@@ -28,7 +28,7 @@ while (node)
 {
 if (strcmp(node->key, key) == 0)
 {
-free(node);
+free(node->value);
 node->value = dup_value;
 return (1);
 }
