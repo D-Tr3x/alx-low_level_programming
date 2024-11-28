@@ -1,4 +1,4 @@
-#include "school.h"
+#include "m.h"
 
 /**
  * main - Entry
